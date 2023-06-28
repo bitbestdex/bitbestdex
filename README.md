@@ -1,4 +1,4 @@
-Bit Best
+BitBest, a Web3 dex platform.
 
 <!--
 **bitbestdex/bitbestdex** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
