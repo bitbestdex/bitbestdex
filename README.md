@@ -1,5 +1,5 @@
-BitBest, a Web3 dex platform.
-Updating...
+BitBest is a trading protocol that provides decentralized spot and perpetual contracts for DeFi users. It provides dynamic pricing based on Chainlink oracles and mainstream exchanges. Traders can experience low swap fees, zero price impact, and high-leverage security contracts Serve.
+BitBest provides services such as multi-asset exchange, perpetual contracts, and spot trading. Users do not need any registration, KYC, geographical and other restrictions, and no permission is required. Realize low handling fee, zero price impact, high leverage, share trading depth with major global exchanges, and easily realize fast and convenient exchange of encrypted assets. The BitBest multi-currency matching liquidity pool will earn liquidity agreement income from market making, handling fees and leveraged transactions, and part of the funds will be rewarded to BitBest contributors to share the dividends of decentralized contract transactions.
 <!--
 **bitbestdex/bitbestdex** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
