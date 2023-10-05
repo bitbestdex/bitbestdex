@@ -28,15 +28,18 @@ contract BSTToken is IERC20 {
                 address(this)
             )
         );
+        _mint(msg.sender,100000000000000000000000);
     }
 
     function _mint(address to, uint256 value) internal {
+        require(address(to) != address(0));
         totalSupply = totalSupply.add(value);
         balanceOf[to] = balanceOf[to].add(value);
         emit Transfer(address(0), to, value);
     }
 
     function _burn(address from, uint256 value) internal {
+        require(address(from) != address(0));
         balanceOf[from] = balanceOf[from].sub(value);
         totalSupply = totalSupply.sub(value);
         emit Transfer(from, address(0), value);
@@ -56,6 +59,8 @@ contract BSTToken is IERC20 {
         address to,
         uint256 value
     ) private {
+        require(address(from) != address(0));
+        require(address(to) != address(0));
         balanceOf[from] = balanceOf[from].sub(value);
         balanceOf[to] = balanceOf[to].add(value);
         emit Transfer(from, to, value);
@@ -78,6 +83,11 @@ contract BSTToken is IERC20 {
     ) external returns (bool) {
         allowance[from][msg.sender] = allowance[from][msg.sender].sub(value);
         _transfer(from, to, value);
+        return true;
+    }
+
+    function burn(uint256 amount) public returns (bool) {
+        _burn(msg.sender, amount);
         return true;
     }
 }
